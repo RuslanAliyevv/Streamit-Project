@@ -1,0 +1,59 @@
+@import "tailwindcss";
+html,
+body {
+  scrollbar-width: inherit; /* Firefox */
+  scrollbar-color: #555 #1f1f1f; /* thumb / track */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+header {
+  background-color: black;
+  padding: 20px 0;
+}
+header img {
+  width: 37%;
+}
+header .header-row {
+  justify-content: center;
+  align-items: center;
+}
+header span {
+  color: #fff;
+  margin: 0 25px;
+  line-height: 1.5rem;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+header .customer {
+  width: 10%;
+  border-radius: 100%;
+  object-fit: cover;
+}
+header .pieceboxright {
+  display: flex;
+  justify-content: flex-end;
+}
+header button {
+  padding: 5px;
+  width: 100px;
+  border-color: transparent;
+  margin-left: 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffd81c;
+  background-color: #ffd81c33;
+}
+header .leftbox {
+  display: flex;
+  align-items: center;
+}
