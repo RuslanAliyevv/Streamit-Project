@@ -1,3 +1,104 @@
 .container{
     margin: 0px 0px 0px 50px !important;
 }
+.header {
+  width: 100%;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.header-row {
+  height: 40px;
+}
+
+/* LEFT */
+.header-left {
+  display: flex;
+  align-items: center;
+  
+}
+
+.logo {
+  height: 40px;
+}
+
+.subscribe-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.subscribe-btn:hover {
+  background: #ff2e2e;
+}
+
+/* CENTER NAV */
+.header-nav {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.header-nav span {
+  color: #ddd;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+}
+
+.header-nav span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: red;
+  transition: 0.3s;
+}
+
+.header-nav span:hover,
+.header-nav .active {
+  color: white;
+}
+
+.header-nav span:hover::after,
+.header-nav .active::after {
+  width: 100%;
+}
+
+/* RIGHT */
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
+.icon {
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  color: red;
+}
+
+.customer {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid red;
+  cursor: pointer;
+}
