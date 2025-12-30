@@ -10,7 +10,7 @@ import person8 from "../../assets/person8.png";
 import person9 from "../../assets/person9.png";
 import person10 from "../../assets/person10.png";
 import person11 from "../../assets/person11.png";
-import  { useState,useEffect,useRef } from "react";
+import  { useState } from "react";
 
 
 

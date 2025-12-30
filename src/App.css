@@ -1,15 +1,33 @@
 @import "tailwindcss";
-html,
-body {
-  scrollbar-width: inherit; /* Firefox */
-  scrollbar-color: #555 #1f1f1f; /* thumb / track */
-}
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=BBH+Hegarty&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: black;
+  font-family: "BBH Hegarty", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Scrollbar track (arka hissə) */
+::-webkit-scrollbar-track {
+  background: #1f1f1f;
+}
+
+/* Scrollbar thumb (tutan hissə) */
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+
+/* Hover olanda */
+::-webkit-scrollbar-thumb:hover {
+  background: #777;
 }
 
 header {
@@ -57,4 +75,3 @@ header .leftbox {
   display: flex;
   align-items: center;
 }
-
